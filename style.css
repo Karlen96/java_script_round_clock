@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    outline: none;
+    text-decoration: none;
+}
+.block2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    background-color: #ccc;
+}
+.block1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    background-color: #ccc;
+    padding: 10px; 
+}
+.clocknumber{
+    height: 100px;
+    font-size: 50px;
+    z-index: 100;
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(219, 146, 11);
+    border-radius: 50%;
+    position: relative;
+    border: 5px solid rgb(116, 116, 231);
+}
+.arrow1,.arrow2,.arrow3{
+    position: absolute;
+    transform-origin: bottom right;
+}
+.arrow1{
+    background-color: #000;
+    height: 170px;
+    width: 3px;
+    top: 75px;
+    z-index: 3;
+}
+.arrow2{
+    background-color: #000;
+    height: 150px;
+    width: 4px;
+    top: 100px;
+    z-index: 2;
+}
+.arrow3{
+    background-color: #000;
+    height: 125px;
+    width: 8px;
+    top: 125px;
+    z-index: 1;
+}
+.arrows::before{
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px; 
+    right: 235px;
+    top:235px;
+    border-radius: 50%;
+    background-color: #000;
+    z-index: 99;
+}
+.arrow1::after{
+    position: absolute;
+    content: "";
+    width: 25px;
+    top: -20px;
+    left: -13px;
+    transform:rotate(-90deg);
+    border-left: 5px solid black;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+}
+.arrow2::after{
+    position: absolute;
+    content: "";
+    width: 25px;
+    top: -20px;
+    left: -13px;
+    transform:rotate(-90deg);
+    border-left: 5px solid black;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+}
+.arrow3::after{
+    position: absolute;
+    content: "";
+    width: 25px;
+    top: -20px;
+    left: -11.5px;
+    transform:rotate(-90deg);
+    border-left: 5px solid red;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+}
+.num1,.num2,.num3,.num4,.num5,.num6,
+.num7,.num8,.num9,.num10,.num11,.num12{
+    position: absolute;
+    font-size: 35px;
+    color: red;
+}
+.num1{
+    top: 45px;
+    right: 135px;
+}
+.num2{
+    top: 120px;
+    right: 60px;
+}
+.num3{
+    top: 225px;
+    right: 30px;
+}
+.num4{
+    bottom: 130px;
+    right: 60px;
+}
+.num5{
+    bottom: 50px;
+    right: 130px;
+}
+.num6{
+    bottom: 20px;
+    right: 240px;
+}
+.num7{
+    bottom: 50px;
+    left: 135px;
+}
+.num8{
+    bottom: 130px;
+    left: 50px;
+}
+.num9{
+    top: 225px;
+    left: 30px;
+}
+.num10{
+    top: 120px;
+    left: 60px;
+}
+.num11{
+    top: 45px;
+    left: 135px;
+}
+.num12{
+    top: 20px;
+}
